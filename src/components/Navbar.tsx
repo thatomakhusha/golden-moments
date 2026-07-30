@@ -16,7 +16,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 border-b border-gold/20 bg-cream/80 backdrop-blur-xl">
-      <div className="mx-auto flex h-19.5 max-w-7xl items-center justify-between px-6 lg:px-10">
+      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6 lg:px-10">
 
         <Link href="/" onClick={() => setMenuOpen(false)}>
           <Image
@@ -110,6 +110,7 @@ export default function Navbar() {
 
             <Link
               href="/order"
+              onClick={() => setMenuOpen(false)}
               className="
                 rounded-full
                 border
