@@ -18,9 +18,9 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
-  title: "Golden Moments | Custom Cake Studio",
+  title: "Golden Moments | Luxury Baked Treats",
   description:
-    "Handcrafted bespoke cakes designed to make your special occasions unforgettable.",
+    "Handcrafted gift boxes, cupcakes, and freshly baked treats made with care in Pretoria.",
 };
 
 export default function RootLayout({
