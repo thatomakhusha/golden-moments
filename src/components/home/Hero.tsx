@@ -12,7 +12,7 @@ export default function Hero() {
         <div className="mb-6 flex items-center justify-center gap-4 text-[13px] uppercase tracking-[0.35em] text-gold">
             <span className="h-px w-8 bg-gold" />
             <span>
-                Luxury Wedding & Celebration Cakes
+                Handcrafted With Love
             </span>
             <span className="h-px w-8 bg-gold" />
         </div>
@@ -27,18 +27,16 @@ export default function Hero() {
             lg:text-[68px]
           "
         >
-          Creating Beautiful Moments,
+          Sweet moments,
           <br />
           <span className="not-italic text-gold">
-            One Cake
-          </span>{" "}
-          at a Time
+            beautifully created
+          </span>
         </h1>
 
         <p className="mt-8 max-w-xl text-lg font-light leading-8 text-ink/80">
-          Handcrafted bespoke cakes designed with timeless elegance.
-          Every celebration deserves a centrepiece that's as memorable
-          as the moment itself.
+          From luxury gift boxes to freshly baked treats,
+          every order is made with care and attention to detail.
         </p>
 
         <div className="mt-12 flex flex-wrap justify-center gap-5">

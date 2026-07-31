@@ -19,7 +19,7 @@ const Footer = () => {
           />
 
           <p className="text-sm leading-[1.8] text-ivory/70">
-            Custom cakes & handmade treats,
+            Luxury baked gift boxes & handmade treats,
             <br />
             baked fresh in Pretoria
           </p>
@@ -56,10 +56,17 @@ const Footer = () => {
             </p>
 
             <Link
-                href="/#custom-creations"
+                href="/#creations"
                 className="text-sm text-ivory/70 transition hover:text-gold"
             >
-                Our Collection
+                Our Creations
+            </Link>
+
+            <Link
+                href="/#treats"
+                className="text-sm text-ivory/70 transition hover:text-gold"
+            >
+                Treats
             </Link>
 
             <Link
@@ -82,7 +89,7 @@ const Footer = () => {
         <div className="flex flex-col gap-3">
 
           <p className="mb-2 text-[11px] font-medium uppercase tracking-[0.2em] text-cream">
-            Order
+            Start Your Order
           </p>
 
           <Link
@@ -119,14 +126,14 @@ const Footer = () => {
           </p>
 
           <a
-            href="tel:+27768881684"
+            href="tel:+27796154201"
             className="text-sm text-ivory/70 transition hover:text-gold"
           >
-            +27 76 888 1684
+            +27 79 615 4201
           </a>
 
           <p className="text-sm text-ivory/70">
-            Pretoria, South Africa
+            Ga-Rankuwa, Pretoria, South Africa
           </p>
 
         </div>
