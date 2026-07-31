@@ -1,11 +1,12 @@
 import Image from "next/image";
 
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/layout/Navbar";
 import Container from "@/components/ui/Container";
-import Hero from "@/components/Hero";
-import About from "@/components/About";
-import CTA from "@/components/CTA";
-import Footer from "@/components/Footer";
+import Hero from "@/components/home/Hero";
+import About from "@/components/home/About";
+import Pricing from "@/components/home/Pricing";
+import CTA from "@/components/home/CTA";
+import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Container>
           <Hero/>
           <About/>
+          <Pricing/>
         </Container> 
         <CTA/>
         <Footer/>
