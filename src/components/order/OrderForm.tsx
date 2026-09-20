@@ -7,6 +7,8 @@ export default function OrderForm() {
     name: "",
     phone: "",
     category: "",
+    flavour: "",
+    filling: "",
     details: "",
     date: "",
   });
@@ -37,10 +39,16 @@ ${formData.phone}
 Category:
 ${formData.category}
 
+Flavour:
+${formData.flavour}
+
+Filling:
+${formData.filling}
+
 Collection Date:
 ${formData.date}
 
-Order Details:
+Additional Details:
 ${formData.details}
     `;
 
@@ -53,12 +61,10 @@ ${formData.details}
 
   return (
     <section className="bg-ivory px-6 py-24 lg:px-10">
-
       <div className="mx-auto max-w-3xl">
 
         {/* Heading */}
         <div className="mb-12 text-center">
-
           <div className="mb-6 flex items-center justify-center gap-4 text-[12px] uppercase tracking-[0.35em] text-gold">
             <span className="h-px w-8 bg-gold" />
             <span>Place Your Order</span>
@@ -73,14 +79,12 @@ ${formData.details}
             Share your order details and we’ll continue the conversation
             with you on WhatsApp.
           </p>
-
         </div>
 
-
         {/* Form */}
-        <div className="space-y-6 bg-white p-8 border border-gold/20 lg:p-12">
+        <div className="space-y-6 border border-gold/20 bg-white p-8 lg:p-12">
 
-
+          {/* Name */}
           <div>
             <label className="mb-2 block text-sm text-brown">
               Name
@@ -95,7 +99,7 @@ ${formData.details}
             />
           </div>
 
-
+          {/* WhatsApp Number */}
           <div>
             <label className="mb-2 block text-sm text-brown">
               WhatsApp Number
@@ -110,7 +114,7 @@ ${formData.details}
             />
           </div>
 
-
+          {/* Category */}
           <div>
             <label className="mb-2 block text-sm text-brown">
               What would you like to order?
@@ -122,38 +126,57 @@ ${formData.details}
               onChange={handleChange}
               className="w-full border border-gold/20 px-4 py-3 outline-none focus:border-gold"
             >
-              <option value="">
-                Select category
-              </option>
-
-              <option>
-                Luxury Gift Box
-              </option>
-
-              <option>
-                Indulgence Box
-              </option>
-
-              <option>
-                Cupcakes
-              </option>
-
-              <option>
-                Red Cakes
-              </option>
-
-              <option>
-                Scones
-              </option>
-
-              <option>
-                Custom Request
-              </option>
-
+              <option value="">Select category</option>
+              <option value="Luxury Gift Box">Luxury Gift Box</option>
+              <option value="Indulgence Box">Indulgence Box</option>
+              <option value="Cupcakes">Cupcakes</option>
+              <option value="Red Cakes">Red Cakes</option>
+              <option value="Scones">Scones</option>
+              <option value="Custom Request">Custom Request</option>
             </select>
           </div>
 
+          {/* Flavour */}
+          <div>
+            <label className="mb-2 block text-sm text-brown">
+              Flavour
+            </label>
 
+            <select
+              name="flavour"
+              value={formData.flavour}
+              onChange={handleChange}
+              className="w-full border border-gold/20 px-4 py-3 outline-none focus:border-gold"
+            >
+              <option value="">Select flavour</option>
+              <option value="Chocolate">Chocolate</option>
+              <option value="Vanilla">Vanilla</option>
+              <option value="Red Velvet">Red Velvet</option>
+            </select>
+          </div>
+
+          {/* Filling */}
+          <div>
+            <label className="mb-2 block text-sm text-brown">
+              Filling
+            </label>
+
+            <select
+              name="filling"
+              value={formData.filling}
+              onChange={handleChange}
+              className="w-full border border-gold/20 px-4 py-3 outline-none focus:border-gold"
+            >
+              <option value="">Select filling</option>
+              <option value="Caramel">Caramel</option>
+              <option value="Chocolate">Chocolate</option>
+              <option value="Mixed Berry Sauce">
+                Mixed Berry Sauce
+              </option>
+            </select>
+          </div>
+
+          {/* Collection Date */}
           <div>
             <label className="mb-2 block text-sm text-brown">
               Collection Date
@@ -168,7 +191,7 @@ ${formData.details}
             />
           </div>
 
-
+          {/* Additional Details */}
           <div>
             <label className="mb-2 block text-sm text-brown">
               Tell us more
@@ -180,11 +203,11 @@ ${formData.details}
               onChange={handleChange}
               rows={5}
               className="w-full border border-gold/20 px-4 py-3 outline-none focus:border-gold"
-              placeholder="Flavours, colours, quantity, theme, special requests..."
+              placeholder="Colours, quantity, theme, special requests..."
             />
           </div>
 
-
+          {/* Submit */}
           <button
             onClick={sendToWhatsApp}
             className="
@@ -203,11 +226,8 @@ ${formData.details}
             Send Order Request
           </button>
 
-
         </div>
-
       </div>
-
     </section>
   );
 }
