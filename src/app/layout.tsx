@@ -18,9 +18,9 @@ const jost = Jost({
 });
 
 export const metadata: Metadata = {
-  title: "Golden Moments | Luxury Baked Treats",
+  title: "Golden Moments Bakery | Esther Khoza | Ga-Rankuwa, Pretoria",
   description:
-    "Handcrafted gift boxes, cupcakes, and freshly baked treats made with care in Pretoria.",
+    "Golden Moments Bakery by Esther Khoza creates handcrafted baked treats, luxury gift boxes, cupcakes, and homemade favourites in Ga-Rankuwa, Pretoria.",
 };
 
 export default function RootLayout({
